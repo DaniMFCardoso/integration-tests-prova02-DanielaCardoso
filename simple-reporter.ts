@@ -11,7 +11,7 @@ export const SimpleReporter = {
       message: JSON.stringify({ start, end, request, response }, undefined, 4),
       context: null
     });
-  },
+  }, 
 
   afterStep(step: Record<string, unknown>): void {
     // required by contract.
